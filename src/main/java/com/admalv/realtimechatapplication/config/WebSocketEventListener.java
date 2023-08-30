@@ -32,7 +32,7 @@ public class WebSocketEventListener {
 			ChatMessage chatMessage = ChatMessage.builder()
 				.type(MessageType.LEAVE)
 				.sender(username)
-				.build();
+				.build(); 
 		}
 		
 	}

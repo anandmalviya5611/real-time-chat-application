@@ -1,7 +1,10 @@
 package com.admalv.realtimechatapplication.chat;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 
-
+@AllArgsConstructor
+@Builder
 public class ChatMessage {
 	
 	private String content;
@@ -30,16 +33,10 @@ public class ChatMessage {
 		this.type = type;
 	}
 	
-	public ChatMessage(String content, String sender, MessageType type) {
-		super();
-		this.content = content;
-		this.sender = sender;
-		this.type = type;
-	}
 	
-	public static ChatMessageBuilder builder() {
+	// public static ChatMessageBuilder builder() {
 	
-		return new ChatMessageBuilder();
+	// 	return new ChatMessageBuilder();
 
-	}
+	// }
 }
